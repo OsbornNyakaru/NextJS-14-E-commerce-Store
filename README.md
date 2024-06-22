@@ -82,7 +82,6 @@ The E-Commerce Platform is designed to deliver high-quality online shopping thro
 
     ```sh
     npm init -y
-    npm install stripe express.js nodemon dotenv
     ```
 
 3. **Configure the environment variables:**
@@ -106,7 +105,7 @@ The E-Commerce Platform is designed to deliver high-quality online shopping thro
 5. **Run the server:**
 
     ```sh
-    npm start
+    npm run dev
     ```
 
     The server will start on `http://localhost:3000`.
