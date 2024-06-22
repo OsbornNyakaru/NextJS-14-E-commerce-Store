@@ -14,10 +14,12 @@ pnpm dev
 bun dev
 ```
 
-# Educational Platform - Cognita
-Welcome to the Educational Platform project! This README will guide you through the setup, configuration, and usage of the platform. This project aims to provide a comprehensive educational platform similar to edX, offering courses, certifications, and interactive learning experiences.
+# E-Commerce Platform - Cognita
+Welcome to the E-Commerce Platform project! This README will guide you through the setup, configuration, and usage of the platform. 
+![pitch deck image 1](https://github.com/OsbornNyakaru/NextJS-14-E-commerce-Store/assets/110415101/4776a1f4-b5fd-4a41-a6cd-ab69e7bc45d2)
+![pitch deck image 2](https://github.com/OsbornNyakaru/NextJS-14-E-commerce-Store/assets/110415101/3265376c-27ed-4125-9c3a-89976f197705)
+![pitch deck image 4](https://github.com/OsbornNyakaru/NextJS-14-E-commerce-Store/assets/110415101/9da3b4e9-612c-4476-959a-e8ad9f9869a6)
 
-![thumbnail](https://github.com/OsbornNyakaru/PLP-Project-Cognita/assets/110415101/b1ee7e6e-4ee2-4413-a94c-370e99f858cd)
 
 ## Table of Contents
 
