@@ -40,6 +40,7 @@ The E-Commerce Platform is designed to deliver high-quality online shopping thro
 - **User Authentication**: Secure user registration and login.
 - **Sales Management**: Enables tracking the number of sales, orders and products available for sale.
 - **Payment System**: Stripe payment system to allow simplified, fast and secure payment.
+- **Dark/Light mode**" The application supports theme changing to either dark/light or system.
 
 ## Technologies Used
 

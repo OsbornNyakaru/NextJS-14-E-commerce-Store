@@ -1,0 +1,3 @@
+[submodule "E-Commerce-Admin"]
+	path = E-Commerce-Admin
+	url = https://github.com/OsbornNyakaru/NextJS-14-E-commerce-Website.git
