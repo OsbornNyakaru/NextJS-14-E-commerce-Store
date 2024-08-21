@@ -60,7 +60,7 @@ The E-Commerce Platform is designed to deliver high-quality online shopping thro
 
 - **Node.js**: JavaScript runtime environment for server-side scripting.
 - **Prisma**: Web framework for Node.js to build RESTful APIs.
-- **Railway**: Web framework for Node.js to build RESTful APIs.
+- **Railway**: A database management platform to host all the data from the website.
 
 ### Database
 
