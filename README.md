@@ -15,10 +15,15 @@ bun dev
 ```
 
 # E-Commerce Platform - Cognita
-Welcome to the E-Commerce Platform project! This README will guide you through the setup, configuration, and usage of the platform. 
+Welcome to the E-Commerce Platform project! This README will guide you through the setup, configuration, and usage of the platform.
+![pitch deck image 7](https://github.com/OsbornNyakaru/NextJS-14-E-commerce-Store/assets/110415101/cfe103d2-d913-49ab-91a7-14155dfd8ef5)
+
 ![pitch deck image 1](https://github.com/OsbornNyakaru/NextJS-14-E-commerce-Store/assets/110415101/4776a1f4-b5fd-4a41-a6cd-ab69e7bc45d2)
+
 ![pitch deck image 2](https://github.com/OsbornNyakaru/NextJS-14-E-commerce-Store/assets/110415101/3265376c-27ed-4125-9c3a-89976f197705)
 ![pitch deck image 4](https://github.com/OsbornNyakaru/NextJS-14-E-commerce-Store/assets/110415101/9da3b4e9-612c-4476-959a-e8ad9f9869a6)
+
+![pitch deck image 6](https://github.com/OsbornNyakaru/NextJS-14-E-commerce-Store/assets/110415101/2cf9ddeb-03c1-4481-af21-450ae20f3eac)
 
 
 ## Table of Contents
@@ -55,7 +60,7 @@ The E-Commerce Platform is designed to deliver high-quality online shopping thro
 
 - **Node.js**: JavaScript runtime environment for server-side scripting.
 - **Prisma**: Web framework for Node.js to build RESTful APIs.
-- **Railway**: Web framework for Node.js to build RESTful APIs.
+- **Railway**: A database management platform to host all the data from the website.
 
 ### Database
 
@@ -82,7 +87,6 @@ The E-Commerce Platform is designed to deliver high-quality online shopping thro
 
     ```sh
     npm init -y
-    npm install stripe express.js nodemon dotenv
     ```
 
 3. **Configure the environment variables:**
@@ -106,7 +110,7 @@ The E-Commerce Platform is designed to deliver high-quality online shopping thro
 5. **Run the server:**
 
     ```sh
-    npm start
+    npm run dev
     ```
 
     The server will start on `http://localhost:3000`.
