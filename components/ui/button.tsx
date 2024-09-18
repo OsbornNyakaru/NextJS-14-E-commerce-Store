@@ -22,6 +22,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps> (({
                 border-transparent
                 px-5
                 py-3
+                mx-1
                 disabled:cursor-not-allowed
                 disabled:opacity-50
                 text-white
@@ -31,6 +32,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps> (({
                 `,
                 className
             )}
+            disabled={disabled}
             ref={ref}
             {...props}
         >

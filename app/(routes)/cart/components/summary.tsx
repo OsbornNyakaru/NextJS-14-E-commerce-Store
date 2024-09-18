@@ -1,6 +1,6 @@
 "use client";
 
-import axios from "axios"; 
+import axios from "axios";
 import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { toast } from "react-hot-toast";
@@ -24,25 +24,36 @@ const Summary = () => {
             toast.error("Something went wrong.");
         }
     }, [searchParams, removeAll]);
-    
+
     const totalPrice = items.reduce((total, item) => {
         return total + Number(item.price);
     }, 0);
-    
-    const onCheckout = async () => {
-        const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/checkout`, {
-            productIds: items.map((item) => item.id),
-        });
-        // const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/checkout`, {
-        //     productIds: items.map((item) => item.id),
-        // });
-        
-        window.location.href = response.data.url;
+
+    interface CheckoutResponse {
+        url: string;
     }
 
-    return ( 
+    const onCheckout = async (): Promise<void> => {
+        try {
+            const response = await axios.post<CheckoutResponse>(`${process.env.NEXT_PUBLIC_API_URL}/checkout`, {
+                productIds: items.map((item: { id: string }) => item.id),
+            });
+    
+            const { data } = response;
+    
+            if (data && data.url) {
+                window.location.href = data.url;
+            } else {
+                console.error("No URL returned from the API");
+            }
+        } catch (error) {
+            console.error("Error during checkout process:", error);
+        }
+    };
+
+    return (
         <div
-        className="
+            className="
                 mt-16
                 rounded-lg
                 bg-gray-50
@@ -62,14 +73,14 @@ const Summary = () => {
                     <div className="text-base font-medium text-gray-900">
                         Order total
                     </div>
-                    <Currency value={totalPrice}/>
+                    <Currency value={totalPrice} />
                 </div>
             </div>
-            <Button onClick={onCheckout} className="w-4/5 mt-6">
+            <Button disabled={items.length === 0} onClick={onCheckout} className="w-full mt-6">
                 Checkout
             </Button>
         </div>
-     );
+    );
 }
- 
+
 export default Summary;
